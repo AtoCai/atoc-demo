@@ -34,6 +34,7 @@ body::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 h1 {
@@ -59,13 +60,12 @@ h1 {
 }
 
 footer {
-    position: absolute;
-    bottom: 3rem;
+    padding-bottom: 3rem;
     font-size: 0.8rem;
-    color: #444;
+    color: #6d6b6b;
     font-weight: 300;
     letter-spacing: 0.05em;
-    animation: fadeIn 4s ease-out;
+    animation: fadeIn 2s ease-out;
     z-index: 1;
 }
 
