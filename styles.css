@@ -35,6 +35,7 @@ body::before {
     justify-content: center;
     align-items: center;
     height: 100%;
+    min-height: 0;
 }
 
 h1 {
@@ -60,13 +61,14 @@ h1 {
 }
 
 footer {
-    padding-bottom: 3rem;
-    font-size: 0.8rem;
+    padding-bottom: 2rem;
+    font-size: clamp(0.7rem, 2vw, 0.8rem);
     color: #6d6b6b;
     font-weight: 300;
     letter-spacing: 0.05em;
     animation: fadeIn 2s ease-out;
     z-index: 1;
+    margin-top: auto;
 }
 
 @keyframes fadeIn {
@@ -77,5 +79,9 @@ footer {
 @media (max-width: 768px) {
     .coming-soon {
         letter-spacing: 0.2em;
+    }
+    
+    footer {
+        padding-bottom: 1rem;
     }
 }
